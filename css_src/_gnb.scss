@@ -1,0 +1,75 @@
+.header{
+
+  .gnb{
+    width:100%;
+    background:#220905;
+    box-sizing: border-box;
+
+    &-close{
+      height:65px;
+      position: relative;
+
+      &-button{
+        display: block;
+        border:0;
+        padding: 8px 0;
+        background: none;
+
+        position:absolute;
+        top:0;
+        left:89px;
+
+        &>span {
+          display: block;
+          width: 39px;
+          height: 5px;
+          background: #56878F;
+          text-indent: -9999em;
+
+          &:before {
+            display: block;
+            width: 39px;
+            height: 5px;
+            background: #56878F;
+            position:absolute;
+          }
+
+          &:after {
+            display: block;
+            width: 39px;
+            height: 5px;
+            background: #56878F;
+            position:absolute;
+          }
+        }
+
+      }
+
+      &-logo{
+        font-size:24px;
+        letter-spacing:9px;
+        position:absolute;
+        top:12px;
+        left:854px;
+        color:#56878F;
+      }
+
+      &-sign{
+        width:186px;
+        position:absolute;
+        top:0;
+        font-size:18px;
+        color:#56878F;
+
+        &.login{
+          float:left;
+
+        }
+      }
+    }
+  }
+
+
+
+
+}
