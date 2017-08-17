@@ -45,14 +45,14 @@ gulp.task('sass', function(){
 
  concat
 
-gulp.task('rolling', function() {
+gulp.task('MenuOpen', function() {
   return gulp.src('js_src/*.js')
       .pipe(sourcemaps.init())
-      .pipe(concat('image_rolling.js'))
+      .pipe(concat('menu_open.js'))
       .pipe(sourcemaps.write())
       .pipe(gulp.dest('js/'));
 });
-gulp.task('jsconcat', ['rolling']);
+gulp.task('jsconcat', ['MenuOpen']);
 
 
 gulp.task('default', ['livereload', 'include', 'sass', 'jsconcat', 'watch']);

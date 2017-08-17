@@ -1,47 +1,58 @@
 .header{
+  position:absolute;
 
   .gnb{
     width:100%;
-    background:#220905;
+    background:none;
     box-sizing: border-box;
+    position:fixed;
+    z-index: 2;
+
 
     &-close{
       height:65px;
       position: relative;
+      background:#fff;
+      opacity: 0.8;
 
       &-button{
-        display: block;
+        display:block;
+        padding:10px 0;
         border:0;
-        padding: 8px 0;
-        background: none;
-
+        background:none;
         position:absolute;
-        top:0;
-        left:89px;
+        top:20px;
+        left:83px;
+        text-indent: -9999em;
+        z-index: 9;
+        cursor: pointer;
 
-        &>span {
-          display: block;
-          width: 39px;
-          height: 5px;
+        span{
+          display:block;
+          width:36px;
+          height:5px;
           background: #56878F;
           text-indent: -9999em;
-
-          &:before {
-            display: block;
-            width: 39px;
-            height: 5px;
-            background: #56878F;
-            position:absolute;
-          }
-
-          &:after {
-            display: block;
-            width: 39px;
-            height: 5px;
-            background: #56878F;
-            position:absolute;
-          }
         }
+        &:before{
+          content:"";
+          display:block;
+          width:36px;
+          height:5px;
+          background: #56878F;
+          position:absolute;
+          top:0;
+        }
+        &:after{
+          content:"";
+          display:block;
+          width:36px;
+          height:5px;
+          background: #56878F;
+          position:absolute;
+          top:20px;
+        }
+
 
       }
 
@@ -50,26 +61,59 @@
         letter-spacing:9px;
         position:absolute;
         top:12px;
-        left:854px;
+        left:845px;
         color:#56878F;
+
       }
 
       &-sign{
-        width:186px;
+        width:130px;
         position:absolute;
-        top:0;
+        top:18px;
+        left:1649px;
         font-size:18px;
         color:#56878F;
+      }
+      &-login{
+        float:left;
+        &>span{
+          margin:0 12px;
+        }
+      }
 
-        &.login{
+    }
+
+    &-open{
+      display:none;
+      height:270px;
+      background: #220905;
+
+      &.on{
+        display:block;
+      }
+
+      &-menu{
+        width:1190px;
+
+        @extend %clearfix;
+
+        padding-top: 75px;
+
+        &-depth1{
+          width:297px;
+          font-size:24px;
+          color:#f0a748;
           float:left;
+          text-align: center;
 
+        }
+        &-depth2{
+          font-size:19px;
+          color:#56878F;
+          margin-top: 13px;
+          line-height: 1.9;
         }
       }
     }
   }
-
-
-
-
 }
