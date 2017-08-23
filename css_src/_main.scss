@@ -1,10 +1,8 @@
 .main {
   &-paragraph{
-    width: 731px;
+    width: 100%;
     font-size: 21px;
     position: absolute;
-    top: 420px;
-    left: 569px;
     color: #c3c3c4;
 
   }
@@ -13,7 +11,7 @@
     position: relative;
     width: 1200px;
     height: 200px;
-    padding-top: 250px;
+    padding-top: 115px;
     margin: 0 auto;
 
     @extend %clearfix;
@@ -39,16 +37,20 @@
 
       &-link{
         color: #fff;
-        font-size:20px;
+        font-size: 25px;
         display: block;
-        font-family:'Crimson Text',NanumBarunGothic, sans-serif;
-        width:200px;
-        height:200px;
+        font-family: 'Crimson Text',NanumBarunGothic, sans-serif;
+        width: 200px;
+        height: 100px;
         position: absolute;
-        top: 90px;
+        padding: 80px 0 18px;
+        /* top: 46%; */
         left: 50%;
         transform: translateX(-50%);
 
+        &:hover{
+          color:#56878F;
+        }
 
       }
     }
@@ -86,11 +88,13 @@
     opacity: 0.7;
   }
   .lay-text{
-    height: 100px;
-    width: 1900px;
+    height: auto;
+    width: 100%;
     font-size: 130px;
     color: #fff;
-    margin: 30px auto 0;
     position: relative;
-    z-index: 1;
+    padding-top:100px;
+
+
   }
+
