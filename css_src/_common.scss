@@ -6,14 +6,128 @@
   font-size:45px;
   color:#56878F;
   position:absolute;
-  top:250px;
+  top:200px;
   width:100%;
   text-align: center;
   font-weight: 500;
+
 }
+.page-name-book{
+  font-size: 560px;
+  color: #56878F;
+  position: fixed;
+  /* top: 100px; */
+  width: 1900px;
+  text-align: center;
+  font-weight: 500;
+  margin: 0;
+}
+
+
 
 %clearfix:after{
   content:"";
   display:block;
   clear:both;
+}
+
+.color7{
+  color:#777;
+}
+.color9{
+  color:#999;
+}
+.name{
+  font-size:45px;
+  color:#56878F;
+  position:absolute;
+  top:100px;
+  width:100%;
+  text-align: center;
+  font-weight: 500;
+  z-index: 1;
+}
+
+.page-number{
+  font-size: 35px;
+  color: #999;
+  position: absolute;
+  top: 75px;
+  left: 17px;
+
+
+  &.b-page{
+    top: 650px;
+    left: 45%;
+  }
+  &.art-page{
+    top: 900px;
+    left: 48%;
+  }
+  &.life-page{
+    float:left;
+    margin: 75px -12px;
+
+
+  }
+}
+.arrow{
+  width:100%;
+  position:absolute;
+  top:0;
+  cursor: pointer;
+
+  &.left{
+    width:45px;
+    height:83px;
+    background:url("../images/aroow_bigleft_icon.png") no-repeat 0 0;
+    opacity: 0.8;
+    top:45%;
+    left:15px;
+
+    &:hover{
+      background:#fff url("../images/aroow_bigleft_icon.png") no-repeat 0 0;
+    }
+  }
+
+  &.right {
+    width: 45px;
+    height:83px;
+    background:url("../images/aroow_bigright_icon.png") no-repeat 0 0;
+    opacity: 0.8;
+    top: 45%;
+    right:15px;
+    &:hover{
+      background:#fff url("../images/aroow_bigright_icon.png") no-repeat 0 0;
+    }
+
+  }
+
+  &.up{
+    width:40px;
+    height: 22px;
+    background:url("../images/arrow_updown_icon.png") no-repeat 0 0;
+    display:block;
+
+  }
+  &.down{
+    width:40px;
+    height: 22px;
+    background:url("../images/arrow_updown_icon.png") no-repeat 0 -31px;
+
+    margin-top:180px;
+  }
+
+}
+.arrow-wrap{
+  width: 100px;
+  height: 200px;
+  position: absolute;
+  top: 38%;
+  right: 35px;
+  box-sizing: border-box;
+  padding: 0 30px;
+}
+.on{
+  display:block;
 }

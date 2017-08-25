@@ -1,16 +1,36 @@
 .book{
   width:100%;
-  height:1400px;
+  height:6500px;
   position:relative;
   background:#043731;
+
 
   &-wrap{
       width:1243px;
       height:879px;
       background: url(../images/book_bg.gif) no-repeat;
       position:absolute;
-      top:400px;
       left:16%;
+
+    &.book-page1{
+      top:5%;
+      }
+    &.book-page2{
+      top:25%;
+    }
+    &.book-page3{
+      top:45%;
+    }
+    &.book-page4{
+      top:65%;
+    }
+    &.book-page5{
+      top:85%;
+    }
+
+    &-arrow{
+      position:relative;
+    }
   }
 
   &-cover{
@@ -32,17 +52,34 @@
     position: absolute;
     top: 88px;
     left: 57%;
-    padding:50px 15px 0;
+    padding:80px 15px 0;
 
 
     &-title{
-      font-size:35px;
-      color:#f0a748;
+      width: 336px;
+      font-size: 42px;
+      margin: 0 auto 50px;
+      color: #f0a748;
       text-align: center;
+      font-family: 'Nanum Myeongjo', serif;
 
+    }
+    &-subtitle{
+      width:400px;
+      margin:0 auto 30px;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    &-paragraph{
+      color:#777;
+      text-align:center;
+      font-size:15px;
     }
 
 
   }
+
+
 
 }

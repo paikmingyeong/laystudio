@@ -29,12 +29,16 @@ footer, header, menu, nav, section {
   display: block;
 }
 body {
-  line-height: 1.6;
+  line-height: 1.5;
   color:#333;
   font-size:16px;
   font-weight: 500;
-  font-family:'Crimson Text',NanumBarunGothic, sans-serif;
+  font-family:'Crimson Text','HCR Dotum LVT', sans-serif;
 }
+p{
+  line-height: 1.7;
+}
+
 ol, ul {
   list-style: none;
 }

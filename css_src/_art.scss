@@ -1,0 +1,69 @@
+.art{
+  width:100%;
+  min-width:1600px;
+
+  &-page1{
+    display:block;
+  }
+  &-page2{
+    display:none;
+  }
+  &-page3{
+    display:none;
+  }
+  &-page4{
+    display:none;
+  }
+  &-page5{
+    display:none;
+  }
+
+
+  &-info{
+    width:520px;
+    height:750px;
+    padding:185px 0 0 132px;
+
+    &-title{
+      font-size:65px;
+      text-align: center;
+      font-weight: 500;
+      margin-bottom:50px;
+    }
+    &-paragraph{
+      text-align: center;
+      font-weight:400;
+
+      &-inside{
+        text-align: center;
+        font-size:13px;
+        width:510px;
+        margin:0 auto;
+      }
+    }
+  }
+
+  &-image1{
+    width:726px;
+    height:974px;
+    overflow: hidden;
+    position:absolute;
+    top:0;
+    right:0;
+
+    &-image{
+      width:726px;
+      height:1189px;
+    }
+  }
+  &-image2{
+    width:637px;
+    height:637px;
+    overflow: hidden;
+    position:absolute;
+    top:20%;
+    right:26%;
+  }
+
+
+}

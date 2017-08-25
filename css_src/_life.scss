@@ -1,0 +1,163 @@
+.life{
+  width:100%;
+  min-width:1400px;
+  height:973px;
+  position:relative;
+
+  &-page{
+    width:100%;
+    min-width:1400px;
+    height:100%;
+    position:absolute;
+    top:0;
+
+    overflow:hidden;
+  }
+
+  &-wrap{
+    width:1400px;
+    margin:0 auto;
+    height:100%;
+
+    padding:250px 100px 0;
+
+    @extend %clearfix;
+  }
+
+  &-image{
+    width:730px;
+    height:520px;
+    float:left;
+
+    @extend %clearfix;
+
+    &-list{
+      width:140px;
+      float:left;
+      margin-right:35px;
+
+      &-item{
+        width:140px;
+        height:140px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin-bottom:43px;
+        cursor:pointer;
+        &:last-child{
+          margin:0;
+        }
+      }
+    }
+    &-big{
+      width:520px;
+      height:520px;
+      overflow: hidden;
+      border-radius: 50%;
+      float:left;
+    }
+  }
+
+  &-info{
+    width:570px;
+    float:right;
+
+
+    &-title{
+      margin:0 auto 40px;
+      font-size:60px;
+      text-align: center;
+      font-family: 'Nanum Myeongjo', serif;
+
+
+      &.coaster{
+        width:426px;
+
+        color:#113ba5;
+      }
+    }
+  }
+
+  &-wrap2{
+    width:1400px;
+    margin:0 auto;
+    height:100%;
+
+    padding:250px 100px 0;
+
+    @extend %clearfix;
+
+  }
+
+  &-image2{
+    width:730px;
+    height:520px;
+    float:right;
+
+    @extend %clearfix;
+
+    &-list{
+      width:140px;
+      float:right;
+      margin-right:35px;
+
+      &-item{
+        width:140px;
+        height:140px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin-bottom:43px;
+        cursor:pointer;
+        &:last-child{
+          margin:0;
+        }
+      }
+    }
+    &-big{
+      width:520px;
+      height:520px;
+      overflow: hidden;
+      border-radius: 50%;
+      float:left;
+    }
+  }
+
+  &-info2{
+    width:570px;
+    float:left;
+
+
+    &-title{
+      margin:0 auto 40px;
+      font-size:60px;
+      text-align: center;
+      font-family: 'Nanum Myeongjo', serif;
+
+
+      &.coaster{
+        width:426px;
+
+        color:#113ba5;
+      }
+    }
+  }
+}
+.bg1{
+  display:none;
+  background:url(../images/life_bg1.jpg) no-repeat 0 -100px;
+}
+.bg2{
+  display:none;
+  background:url(../images/life_bg2.jpg) no-repeat 0 -100px;
+}
+.bg3{
+  display:none;
+  background:url(../images/life_bg3.jpg) no-repeat 0 -100px;
+}
+.bg4{
+  display:block;
+  background:url(../images/life_bg4.jpg) no-repeat 0 -100px;
+}
+.bg5{
+  display:none;
+  background:url(../images/life_bg1.jpg) no-repeat 0 -100px;
+}

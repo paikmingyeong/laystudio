@@ -101,14 +101,15 @@
     }
   }
   &-middle2{
-    height:1390px;
+    width: 100%;
+    height:1240px;
     background:url(../images/inter_middle2_bg.jpg) no-repeat;
+    padding: 150px 0 0 0;
 
     &-wrap{
       width:1192px;
       height:1000px;
       margin:0 auto;
-      padding:250px 0;
 
       @extend %clearfix;
 
@@ -220,49 +221,110 @@
 
   }
 
-  &-which{
-    width:100%;
-    min-width:1200px;
-    height:1500px;
-    margin:250px auto 0;
-    position:relative;
-
-    &-title{
-      font-size: 80px;
-      font-weight: 500;
-      color:#999;
-      text-align: center;
-    }
-
-    &-wrap{
-      width:800px;
-      margin:0 auto;
-      overflow:hidden;
-
-      .inter-which-image{
-        float:left;
-
-
-        &:nth-child(1){
-          width:1600px;
-          top:0;
-          left:0;
-        }
-        &:nth-child(2){
-          width:1600px;
-          top:0;
-          left:0px;
-        }
-      }
-
-      &-imagewrap{
-        width:1600px;
-
-        @extend %clearfix;
-      }
-    }
-
-
+  &-title{
+    font-size: 80px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom:150px;
   }
 
+  &-which{
+    width:100%;
+    min-width:1600px;
+    height:1500px;
+    margin:250px auto 0;
+
+
+    &-wrap{
+      width:1600px;
+      margin:0 auto;
+      position:relative;
+
+
+      .inter-which-image{
+
+      }
+
+
+    }
+
+    &-imagewrap1{
+      width:800px;
+      height:900px;
+      overflow:hidden;
+      position:absolute;
+      top:0;
+      left:0;
+
+      .inter-which-image.on{
+        width:1600px;
+      }
+    }
+
+    &-imagewrap2{
+      width:800px;
+      height:900px;
+      overflow:hidden;
+      position:absolute;
+      top:0;
+      left:800px;
+
+      .inter-which-image{
+        position: absolute;
+        right: 0;
+        width:1600px;
+        z-index: 0;
+
+      }
+    }
+
+    &-icon1{
+      top:47%;
+      left:13px;
+
+    }
+    &-icon2{
+      top:47%;
+      left:9px;
+      z-index: 2;
+
+    }
+  }
+
+}
+.arrow-icon{
+  width: 27px;
+  height: 50px;
+  background:url("../images/arrow_icon.png") no-repeat;
+  text-indent: -9999em;
+  position:absolute;
+
+    &-right {
+      width: 27px;
+      height: 50px;
+      background: url("../images/arrow_icon.png") no-repeat -39px 0;
+      text-indent: -9999em;
+      position: absolute;
+    }
+}
+.arrow-wrap1{
+   width:50px;
+   height:100%;
+   position:absolute;
+   left: 750px;
+  &:hover{
+    background: #fff;
+    opacity: 0.5;
+  }
+
+ }
+.arrow-wrap2{
+  width:50px;
+  height:100%;
+  position:absolute;
+  z-index:1;
+  &:hover{
+    background: #fff;
+    opacity: 0.5;
+  }
 }
