@@ -1,6 +1,6 @@
 .book{
   width:100%;
-  height:6500px;
+  height:6100px;
   position:relative;
   background:#043731;
 
@@ -72,14 +72,34 @@
     }
 
     &-paragraph{
+      width:400px;
       color:#777;
       text-align:center;
       font-size:15px;
+      margin:0 auto;
     }
 
-
   }
+}
 
+// 배경
 
-
+.changeColor1 {
+  color: #f78f90;
+}
+.changeColor2 {
+  background: #F24440;
+  color: #FFDBE4;
+}
+.changeColor3 {
+  background: #f1f1f1;
+  color: #000;
+}
+.changeColor4 {
+  background: #f49090;
+  color: #8ea65c;
+}
+.changeColor5 {
+  background: #046F84;
+  color: #FFF;
 }

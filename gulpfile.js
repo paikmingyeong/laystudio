@@ -43,16 +43,16 @@ gulp.task('sass', function(){
 
 
 
- concat
+ //concat
 
-gulp.task('MenuOpen', function() {
+gulp.task('function', function() {
   return gulp.src('js_src/*.js')
       .pipe(sourcemaps.init())
-      .pipe(concat('menu_open.js'))
+      .pipe(concat('function.js'))
       .pipe(sourcemaps.write())
       .pipe(gulp.dest('js/'));
 });
-gulp.task('jsconcat', ['MenuOpen']);
+gulp.task('jsconcat', ['function']);
 
 
 gulp.task('default', ['livereload', 'include', 'sass', 'jsconcat', 'watch']);
