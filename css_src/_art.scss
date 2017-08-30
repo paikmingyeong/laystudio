@@ -2,27 +2,70 @@
   width:100%;
   min-width:1600px;
 
-  &-page1{
-    display:block;
-  }
-  &-page2{
-    display:none;
-  }
-  &-page3{
-    display:none;
-  }
-  &-page4{
-    display:none;
-  }
-  &-page5{
-    display:none;
+
+  &-box1{
+    width:726px;
+    height:974px;
+    overflow: hidden;
+    position:fixed;
+    right:0;
+    z-index:1;
+
+    &-image{
+      position:absolute;
+      width:726px;
+      height:1189px;
+    }
   }
 
+  &-box2{
+    position:fixed;
+    z-index:10;
+    width:637px;
+    height:637px;
+    overflow: hidden;
+
+    top:200px;
+    right:550px;
+
+    &-image{
+      position: absolute;
+      width:637px;
+      height:637px;
+
+    }
+  }
+
+  &-wrap{
+    height:974px;
+    position:relative;
+    overflow:hidden;
+  }
+
+  &-page{
+    width:100%;
+    min-width:1600px;
+    height:974px;
+    position:absolute;
+    top:0;
+    &.left{
+      transform: translate(0,-100%);
+    }
+    &.right{
+      transform: translate(0,100%);
+    }
+    &.center{
+      transform: translate(0, 0);
+    }
+
+    @extend %clearfix;
+  }
 
   &-info{
     width:520px;
     height:750px;
     padding:185px 0 0 132px;
+    float:left;
 
     &-title{
       font-size:65px;
@@ -43,27 +86,43 @@
     }
   }
 
-  &-image1{
-    width:726px;
-    height:974px;
-    overflow: hidden;
-    position:absolute;
-    top:0;
-    right:0;
 
-    &-image{
-      width:726px;
-      height:1189px;
+
+  &-arrow {
+    width: 100%;
+    position: absolute;
+    top: 47%;
+    cursor: pointer;
+    z-index:5;
+
+    &.left {
+      width: 45px;
+      height: 83px;
+      background: url("../images/aroow_bigleft_icon.png") no-repeat 0 0;
+      opacity: 0.8;
+      top: 45%;
+      left: 15px;
+
+      &:hover {
+        background: #fff url("../images/aroow_bigleft_icon.png") no-repeat 0 0;
+      }
     }
-  }
-  &-image2{
-    width:637px;
-    height:637px;
-    overflow: hidden;
-    position:absolute;
-    top:20%;
-    right:26%;
-  }
 
+    &.right {
+      width: 45px;
+      height: 83px;
+      background: url("../images/aroow_bigright_icon.png") no-repeat 0 0;
+      opacity: 0.8;
+      top: 45%;
+      right: 15px;
+      &:hover {
+        background: #fff url("../images/aroow_bigright_icon.png") no-repeat 0 0;
+      }
 
+    }
+
+  }
+}
+.ani{
+  transition: transform .5s ease-out;
 }
