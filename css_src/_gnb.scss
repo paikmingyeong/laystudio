@@ -7,7 +7,7 @@
     background:none;
     box-sizing: border-box;
     position:fixed;
-    z-index: 10;
+    z-index: 900;
 
 
     &-close{
@@ -16,7 +16,7 @@
       height:65px;
       position: relative;
       background:#fff;
-      opacity: 0.9;
+      opacity: 0.8;
 
       &-button{
         display:block;
@@ -90,6 +90,7 @@
       display:none;
       height:270px;
       background: #220905;
+
 
       &.on{
         display:block;

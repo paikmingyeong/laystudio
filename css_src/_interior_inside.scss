@@ -89,7 +89,7 @@
       &.three{
         width:808px;
         height:601px;
-        top:1000px;
+        top:800px;
         left:350px;
         z-index:0;
 
@@ -267,11 +267,14 @@
       position:absolute;
       top:0;
       left:0;
-      z-index:1;
+      z-index:10;
       transition:all 1s ease-out;
 
       .inter-which-image{
+        position: absolute;
+        left: 0;
         width:1600px;
+        z-index: 0;
       }
     }
 
@@ -282,7 +285,7 @@
       position:absolute;
       top:0;
       left:800px;
-      z-index:1;
+      z-index:10;
       transition:all 1s ease-out;
 
       .inter-which-image{
@@ -294,64 +297,53 @@
       }
     }
 
-    &-icon1{
-      top:47%;
-      left:13px;
+    &-arrow-wrap1{
+      width:50px;
+      height:100%;
+      position:absolute;
+      right:0;
+      z-index:1;
+
+      &:hover{
+        background: #fff;
+        opacity: 0.5;
+      }
 
     }
-    &-icon2{
-      top:47%;
-      left:9px;
-      z-index: 2;
 
+    &-arrow-wrap2{
+      width:50px;
+      height:100%;
+      position:absolute;
+      z-index:1;
+
+      &:hover{
+        background: #fff;
+        opacity: 0.5;
+      }
     }
-  }
 
-}
-.arrow-icon{
-  width: 27px;
-  height: 50px;
-  background:url("../images/arrow_icon.png") no-repeat;
-  text-indent: -9999em;
-  position:absolute;
-
-    &-right {
+    .arrow-icon{
       width: 27px;
       height: 50px;
-      background: url("../images/arrow_icon.png") no-repeat -39px 0;
+      background:url("../images/arrow_icon.png") no-repeat;
       text-indent: -9999em;
-      position: absolute;
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+
+      &.right {
+        width: 27px;
+        height: 50px;
+        background: url("../images/arrow_icon.png") no-repeat -39px 0;
+        text-indent: -9999em;
+        position: absolute;
+      }
     }
-}
-.arrow-wrap1{
-   width:50px;
-   height:100%;
-   position:absolute;
-   right:0;
 
-  &:hover{
-    background: #fff;
-    opacity: 0.5;
   }
 
- }
-.arrow-wrap2{
-  width:50px;
-  height:100%;
-  position:absolute;
-  z-index:1;
+}
 
-  &:hover{
-    background: #fff;
-    opacity: 0.5;
-  }
-}
-.right-on{
-  width:1600px;
-  z-index:2;
-}
-.left-on{
-  z-index:2;
-  left:0;
-  width:1600px;
-}
+

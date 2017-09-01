@@ -45,10 +45,10 @@ $(function(){
 
       var dir = direction;
 
-      if( dir == 'up' ){
+      if( dir == 'one' ){
         nextIndex = currentIndex + 1;
         moveDown();
-      } else if( dir == 'down' ){
+      } else{
         nextIndex = currentIndex - 1;
         moveUp();
       }
@@ -160,84 +160,4 @@ $(function(){
   });
 
 
-  // image2
-
-  var currentIndex3 = 0;
-  var nextIndex3 = 0;
-
-
-  function moveDown3(){
-
-    if(nextIndex3 >= $('.art-image2-box2').length){
-      nextIndex3 = 0;
-    }
-
-    // eq()에 음수 값을 넣어 주면 뒷 순서부터 차례대로 매칭시킴
-    $('.art-image2-box2').eq(currentIndex3-1).removeClass('down ani').addClass('up');
-    $('.art-image2-box2').eq(currentIndex3).removeClass('middle ani').addClass('down ani');
-    $('.art-image2-box2').eq(nextIndex3).removeClass('up').addClass('middle ani');
-
-    currentIndex3 = nextIndex3;
-    nextIndex3++;
-  }
-
-  function moveUp3(){
-
-    if(nextIndex3 <= -1){
-      nextIndex3 = $('.art-image2-box2').length-1;
-    }
-
-    $('.art-image2-box2').eq(nextIndex3-1).removeClass('up ani').addClass('down');
-    $('.art-image2-box2').eq(currentIndex3).removeClass('middle ani').addClass('up ani');
-    $('.art-image2-box2').eq(nextIndex3).removeClass('down').addClass('middle ani');
-
-    currentIndex3 = nextIndex3;
-    nextIndex3--;
-  }
-
-
-
-  var activeClick3 = function(direction){
-
-    var dir3 = direction;
-
-    if( dir3 == 'up' ){
-      nextIndex3 = currentIndex3 + 1;
-      moveDown3();
-    } else if( dir3 == 'down' ){
-      nextIndex3 = currentIndex3 - 1;
-      moveUp3();
-    }
-
-    var $selector3 = $('.artup.' + dir3);
-
-    setTimeout(function(){
-      // 재귀함수
-      $selector3.one('click', function(){
-        activeClick3(dir3);
-      });
-
-    }, 500);
-
-  };
-
-
-  // 실행부
-
-
-  $('.artup.two').on('click', function(){
-
-    nextIndex3 = currentIndex3 + 1;
-    moveDown3('up');
-
-  });
-
-  $('.artdown.two').on('click', function(){
-
-    nextIndex3 = currentIndex3 - 1;
-    moveUp3('down');
-
-  });
-
-
-  });
+});
