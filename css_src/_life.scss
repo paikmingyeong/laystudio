@@ -3,6 +3,10 @@
   min-width:1400px;
   height:973px;
   position:relative;
+<<<<<<< HEAD
+=======
+  overflow:hidden;
+>>>>>>> d925b6168cdb5c036d653c4a1d1c7bdf5ec36990
 
   &-page{
     width:100%;
@@ -10,7 +14,10 @@
     height:100%;
     position:absolute;
     top:0;
+<<<<<<< HEAD
 
+=======
+>>>>>>> d925b6168cdb5c036d653c4a1d1c7bdf5ec36990
     overflow:hidden;
   }
 
@@ -36,6 +43,7 @@
       float:left;
       margin-right:35px;
 
+<<<<<<< HEAD
       &-item{
         width:140px;
         height:140px;
@@ -43,10 +51,22 @@
         border-radius: 50%;
         margin-bottom:43px;
         cursor:pointer;
+=======
+      &-wrap{
+        width:140px;
+        height:140px;
+        overflow: hidden;
+        margin-bottom:43px;
+        border-radius: 50%;
+        cursor:pointer;
+        position:relative;
+
+>>>>>>> d925b6168cdb5c036d653c4a1d1c7bdf5ec36990
         &:last-child{
           margin:0;
         }
       }
+<<<<<<< HEAD
     }
     &-big{
       width:520px;
@@ -54,6 +74,36 @@
       overflow: hidden;
       border-radius: 50%;
       float:left;
+=======
+
+      &-item{
+        position:absolute;
+        transform: translateX(-50%);
+        left:50%;
+        top:0;
+
+        &.height100{
+          height:100%;
+          width:auto;
+        }
+      }
+    }
+
+    &-big {
+      width: 520px;
+      height: 520px;
+      overflow: hidden;
+      border-radius: 50%;
+      float: left;
+      position: relative;
+
+      &-image {
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        top: 0;
+      }
+>>>>>>> d925b6168cdb5c036d653c4a1d1c7bdf5ec36990
     }
   }
 
@@ -61,7 +111,10 @@
     width:570px;
     float:right;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> d925b6168cdb5c036d653c4a1d1c7bdf5ec36990
     &-title{
       margin:0 auto 40px;
       font-size:60px;
@@ -71,9 +124,30 @@
 
       &.coaster{
         width:426px;
+<<<<<<< HEAD
 
         color:#113ba5;
       }
+=======
+        color:#113ba5;
+      }
+      &.lisbon{
+        color:#1c5413;
+      }
+      &.play{
+        color:#ff9000;
+      }
+      &.coffee{
+        color:#f8f8f8;
+      }
+
+    }
+
+    &-paragraph{
+      &.coffee2{
+        color:#ffdddd;
+      }
+>>>>>>> d925b6168cdb5c036d653c4a1d1c7bdf5ec36990
     }
   }
 
@@ -100,16 +174,30 @@
       float:right;
       margin-right:35px;
 
+<<<<<<< HEAD
+=======
+      &-wrap{
+        margin-bottom:43px;
+        &:last-child{
+          margin:0;
+        }
+      }
+>>>>>>> d925b6168cdb5c036d653c4a1d1c7bdf5ec36990
       &-item{
         width:140px;
         height:140px;
         overflow: hidden;
         border-radius: 50%;
+<<<<<<< HEAD
         margin-bottom:43px;
         cursor:pointer;
         &:last-child{
           margin:0;
         }
+=======
+        cursor:pointer;
+
+>>>>>>> d925b6168cdb5c036d653c4a1d1c7bdf5ec36990
       }
     }
     &-big{
@@ -118,6 +206,13 @@
       overflow: hidden;
       border-radius: 50%;
       float:left;
+<<<<<<< HEAD
+=======
+      &-image{
+        width:520px;
+        height:520px;
+      }
+>>>>>>> d925b6168cdb5c036d653c4a1d1c7bdf5ec36990
     }
   }
 
@@ -125,6 +220,7 @@
     width:570px;
     float:left;
 
+<<<<<<< HEAD
 
     &-title{
       margin:0 auto 40px;
@@ -161,3 +257,25 @@
   display:none;
   background:url(../images/life_bg1.jpg) no-repeat 0 -100px;
 }
+=======
+  }
+}
+.bg1{
+
+  background:url(../images/life_bg1.jpg) no-repeat 0 -100px;
+}
+.bg2{
+
+  background:url(../images/life_bg2.jpg) no-repeat 0 -100px;
+}
+.bg3{
+
+  background:url(../images/life_bg5.jpg) no-repeat 0 -100px;
+
+}
+.bg4{
+
+  background:url(../images/life_bg3.jpg) no-repeat 0 -100px;
+}
+
+>>>>>>> d925b6168cdb5c036d653c4a1d1c7bdf5ec36990

@@ -1,6 +1,7 @@
 .art{
   width:100%;
   min-width:1600px;
+<<<<<<< HEAD
 
   &-page1{
     display:block;
@@ -47,10 +48,61 @@
     width:726px;
     height:974px;
     overflow: hidden;
+=======
+  height:auto;
+
+  &-wrap{
+    height:974px;
+    position:relative;
+    overflow:hidden;
+  }
+
+  &-page{
+    width:100%;
+    min-width:1600px;
+    height:900px;
+    position:absolute;
+    top:0;
+    background:#fff;
+    overflow:hidden;
+
+    &-info{
+      width:520px;
+      height:750px;
+      padding:185px 0 0 132px;
+      position:absolute;
+      top:0;
+
+      &-title{
+        font-size:65px;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom:50px;
+      }
+
+      &-paragraph{
+        text-align: center;
+        font-weight:400;
+
+        &-inside{
+          text-align: center;
+          font-size:13px;
+          width:510px;
+          margin:0 auto;
+        }
+      }
+
+    }
+
+  }
+
+  &-image1{
+>>>>>>> d925b6168cdb5c036d653c4a1d1c7bdf5ec36990
     position:absolute;
     top:0;
     right:0;
 
+<<<<<<< HEAD
     &-image{
       width:726px;
       height:1189px;
@@ -67,3 +119,880 @@
 
 
 }
+=======
+    &-box1{
+      width:726px;
+      height:974px;
+      overflow: hidden;
+      position:absolute;
+      right:0;
+      background:#333;
+
+      &-image{
+        width:726px;
+        height:1189px;
+      }
+    }
+  }
+
+  
+  &-image2{
+    width:637px;
+    height:637px;
+    position:absolute;
+    top:200px;
+    right:550px;
+    overflow:hidden;
+
+    @extend %clearfix;
+
+    &-1-box{
+      width:91px;
+      height:91px;
+      background: url("../images/art_page1_2.jpg") no-repeat;
+      opacity: 0.5;
+      float:left;
+
+      &:nth-child(1){
+        background-position: 0 0;
+      }
+      &:nth-child(2){
+        background-position: -91px 0;
+      }
+      &:nth-child(3){
+        background-position: -182px 0;
+      }
+      &:nth-child(4){
+        background-position: -273px 0;
+      }
+      &:nth-child(5){
+        background-position: -364px 0;
+      }
+      &:nth-child(6){
+        background-position: -455px 0;
+      }
+      &:nth-child(7){
+        background-position: -546px 0;
+      }
+      &:nth-child(8){
+        background-position: 0 -91px;
+      }
+      &:nth-child(9){
+        background-position: -91px -91px;
+      }
+      &:nth-child(10){
+        background-position: -182px -91px;
+      }
+
+      &:nth-child(11){
+        background-position: -273px -91px;
+      }
+      &:nth-child(12){
+        background-position: -364px -91px;
+      }
+      &:nth-child(13){
+        background-position: -455px -91px;
+      }
+      &:nth-child(14){
+        background-position: -546px -91px;
+      }
+      &:nth-child(15){
+        background-position: 0 -182px;
+      }
+      &:nth-child(16){
+        background-position: -91px -182px;
+      }
+      &:nth-child(17){
+        background-position: -182px -182px;
+      }
+      &:nth-child(18){
+        background-position: -273px -182px;
+      }
+      &:nth-child(19){
+        background-position: -364px -182px;
+      }
+      &:nth-child(20){
+        background-position: -455px -182px;
+      }
+      &:nth-child(21){
+        background-position: -546px -182px;
+      }
+      &:nth-child(22){
+        background-position: 0 -273px;
+      }
+      &:nth-child(23){
+        background-position: -91px -273px;
+      }
+      &:nth-child(24){
+        background-position: -182px -273px;
+      }
+      &:nth-child(25){
+        background-position: -273px -273px;
+      }
+      &:nth-child(26){
+        background-position: -364px -273px;
+      }
+      &:nth-child(27){
+        background-position: -455px -273px;
+      }
+      &:nth-child(28){
+        background-position: -546px -273px;
+      }
+      &:nth-child(29){
+        background-position: 0 -364px;
+      }
+      &:nth-child(30){
+        background-position: -91px  -364px;
+      }
+      &:nth-child(31){
+        background-position: -182px -364px;
+      }
+      &:nth-child(32){
+        background-position: -273px -364px;
+      }
+      &:nth-child(33){
+        background-position: -364px -364px;
+      }
+      &:nth-child(34){
+        background-position: -455px -364px;
+      }
+      &:nth-child(35){
+        background-position: -546px -364px;
+      }
+      &:nth-child(36){
+        background-position: 0 -455px;
+      }
+
+      &:nth-child(37){
+        background-position: -91px -455px;
+      }
+      &:nth-child(38){
+        background-position: -182px -455px;
+      }
+      &:nth-child(39){
+        background-position: -273px -455px;
+      }
+      &:nth-child(40){
+        background-position: -364px -455px;
+      }
+      &:nth-child(41){
+        background-position: -455px -455px;
+      }
+      &:nth-child(42){
+        background-position: -546px -455px;
+      }
+      &:nth-child(43){
+        background-position: 0 -546px;
+      }
+      &:nth-child(44){
+        background-position: -91px  -546px;
+      }
+      &:nth-child(45){
+        background-position: -182px -546px;
+      }
+      &:nth-child(46){
+        background-position: -273px -546px;
+      }
+      &:nth-child(47){
+        background-position: -364px -546px;
+      }
+      &:nth-child(48){
+        background-position: -455px -546px;
+      }
+      &:nth-child(49){
+        background-position: -546px -546px;
+      }
+
+    }
+    &-2-box{
+      width:91px;
+      height:91px;
+      background: url("../images/art_page2_2.jpg") no-repeat;
+      opacity: 0.5;
+      float:left;
+
+      &:nth-child(1){
+        background-position: 0 0;
+      }
+      &:nth-child(2){
+        background-position: -91px 0;
+      }
+      &:nth-child(3){
+        background-position: -182px 0;
+      }
+      &:nth-child(4){
+        background-position: -273px 0;
+      }
+      &:nth-child(5){
+        background-position: -364px 0;
+      }
+      &:nth-child(6){
+        background-position: -455px 0;
+      }
+      &:nth-child(7){
+        background-position: -546px 0;
+      }
+      &:nth-child(8){
+        background-position: 0 -91px;
+      }
+      &:nth-child(9){
+        background-position: -91px -91px;
+      }
+      &:nth-child(10){
+        background-position: -182px -91px;
+      }
+
+      &:nth-child(11){
+        background-position: -273px -91px;
+      }
+      &:nth-child(12){
+        background-position: -364px -91px;
+      }
+      &:nth-child(13){
+        background-position: -455px -91px;
+      }
+      &:nth-child(14){
+        background-position: -546px -91px;
+      }
+      &:nth-child(15){
+        background-position: 0 -182px;
+      }
+      &:nth-child(16){
+        background-position: -91px -182px;
+      }
+      &:nth-child(17){
+        background-position: -182px -182px;
+      }
+      &:nth-child(18){
+        background-position: -273px -182px;
+      }
+      &:nth-child(19){
+        background-position: -364px -182px;
+      }
+      &:nth-child(20){
+        background-position: -455px -182px;
+      }
+      &:nth-child(21){
+        background-position: -546px -182px;
+      }
+      &:nth-child(22){
+        background-position: 0 -273px;
+      }
+      &:nth-child(23){
+        background-position: -91px -273px;
+      }
+      &:nth-child(24){
+        background-position: -182px -273px;
+      }
+      &:nth-child(25){
+        background-position: -273px -273px;
+      }
+      &:nth-child(26){
+        background-position: -364px -273px;
+      }
+      &:nth-child(27){
+        background-position: -455px -273px;
+      }
+      &:nth-child(28){
+        background-position: -546px -273px;
+      }
+      &:nth-child(29){
+        background-position: 0 -364px;
+      }
+      &:nth-child(30){
+        background-position: -91px  -364px;
+      }
+      &:nth-child(31){
+        background-position: -182px -364px;
+      }
+      &:nth-child(32){
+        background-position: -273px -364px;
+      }
+      &:nth-child(33){
+        background-position: -364px -364px;
+      }
+      &:nth-child(34){
+        background-position: -455px -364px;
+      }
+      &:nth-child(35){
+        background-position: -546px -364px;
+      }
+      &:nth-child(36){
+        background-position: 0 -455px;
+      }
+
+      &:nth-child(37){
+        background-position: -91px -455px;
+      }
+      &:nth-child(38){
+        background-position: -182px -455px;
+      }
+      &:nth-child(39){
+        background-position: -273px -455px;
+      }
+      &:nth-child(40){
+        background-position: -364px -455px;
+      }
+      &:nth-child(41){
+        background-position: -455px -455px;
+      }
+      &:nth-child(42){
+        background-position: -546px -455px;
+      }
+      &:nth-child(43){
+        background-position: 0 -546px;
+      }
+      &:nth-child(44){
+        background-position: -91px  -546px;
+      }
+      &:nth-child(45){
+        background-position: -182px -546px;
+      }
+      &:nth-child(46){
+        background-position: -273px -546px;
+      }
+      &:nth-child(47){
+        background-position: -364px -546px;
+      }
+      &:nth-child(48){
+        background-position: -455px -546px;
+      }
+      &:nth-child(49){
+        background-position: -546px -546px;
+      }
+
+    }
+    &-3-box{
+      width:91px;
+      height:91px;
+      background: url("../images/art_page3_2.jpg") no-repeat;
+      opacity: 0.5;
+      float:left;
+
+      &:nth-child(1){
+        background-position: 0 0;
+      }
+      &:nth-child(2){
+        background-position: -91px 0;
+      }
+      &:nth-child(3){
+        background-position: -182px 0;
+      }
+      &:nth-child(4){
+        background-position: -273px 0;
+      }
+      &:nth-child(5){
+        background-position: -364px 0;
+      }
+      &:nth-child(6){
+        background-position: -455px 0;
+      }
+      &:nth-child(7){
+        background-position: -546px 0;
+      }
+      &:nth-child(8){
+        background-position: 0 -91px;
+      }
+      &:nth-child(9){
+        background-position: -91px -91px;
+      }
+      &:nth-child(10){
+        background-position: -182px -91px;
+      }
+
+      &:nth-child(11){
+        background-position: -273px -91px;
+      }
+      &:nth-child(12){
+        background-position: -364px -91px;
+      }
+      &:nth-child(13){
+        background-position: -455px -91px;
+      }
+      &:nth-child(14){
+        background-position: -546px -91px;
+      }
+      &:nth-child(15){
+        background-position: 0 -182px;
+      }
+      &:nth-child(16){
+        background-position: -91px -182px;
+      }
+      &:nth-child(17){
+        background-position: -182px -182px;
+      }
+      &:nth-child(18){
+        background-position: -273px -182px;
+      }
+      &:nth-child(19){
+        background-position: -364px -182px;
+      }
+      &:nth-child(20){
+        background-position: -455px -182px;
+      }
+      &:nth-child(21){
+        background-position: -546px -182px;
+      }
+      &:nth-child(22){
+        background-position: 0 -273px;
+      }
+      &:nth-child(23){
+        background-position: -91px -273px;
+      }
+      &:nth-child(24){
+        background-position: -182px -273px;
+      }
+      &:nth-child(25){
+        background-position: -273px -273px;
+      }
+      &:nth-child(26){
+        background-position: -364px -273px;
+      }
+      &:nth-child(27){
+        background-position: -455px -273px;
+      }
+      &:nth-child(28){
+        background-position: -546px -273px;
+      }
+      &:nth-child(29){
+        background-position: 0 -364px;
+      }
+      &:nth-child(30){
+        background-position: -91px  -364px;
+      }
+      &:nth-child(31){
+        background-position: -182px -364px;
+      }
+      &:nth-child(32){
+        background-position: -273px -364px;
+      }
+      &:nth-child(33){
+        background-position: -364px -364px;
+      }
+      &:nth-child(34){
+        background-position: -455px -364px;
+      }
+      &:nth-child(35){
+        background-position: -546px -364px;
+      }
+      &:nth-child(36){
+        background-position: 0 -455px;
+      }
+
+      &:nth-child(37){
+        background-position: -91px -455px;
+      }
+      &:nth-child(38){
+        background-position: -182px -455px;
+      }
+      &:nth-child(39){
+        background-position: -273px -455px;
+      }
+      &:nth-child(40){
+        background-position: -364px -455px;
+      }
+      &:nth-child(41){
+        background-position: -455px -455px;
+      }
+      &:nth-child(42){
+        background-position: -546px -455px;
+      }
+      &:nth-child(43){
+        background-position: 0 -546px;
+      }
+      &:nth-child(44){
+        background-position: -91px  -546px;
+      }
+      &:nth-child(45){
+        background-position: -182px -546px;
+      }
+      &:nth-child(46){
+        background-position: -273px -546px;
+      }
+      &:nth-child(47){
+        background-position: -364px -546px;
+      }
+      &:nth-child(48){
+        background-position: -455px -546px;
+      }
+      &:nth-child(49){
+        background-position: -546px -546px;
+      }
+
+    }
+    &-4-box{
+      width:91px;
+      height:91px;
+      background: url("../images/art_page4_2.jpg") no-repeat;
+      opacity: 0.5;
+      float:left;
+
+      &:nth-child(1){
+        background-position: 0 0;
+      }
+      &:nth-child(2){
+        background-position: -91px 0;
+      }
+      &:nth-child(3){
+        background-position: -182px 0;
+      }
+      &:nth-child(4){
+        background-position: -273px 0;
+      }
+      &:nth-child(5){
+        background-position: -364px 0;
+      }
+      &:nth-child(6){
+        background-position: -455px 0;
+      }
+      &:nth-child(7){
+        background-position: -546px 0;
+      }
+      &:nth-child(8){
+        background-position: 0 -91px;
+      }
+      &:nth-child(9){
+        background-position: -91px -91px;
+      }
+      &:nth-child(10){
+        background-position: -182px -91px;
+      }
+
+      &:nth-child(11){
+        background-position: -273px -91px;
+      }
+      &:nth-child(12){
+        background-position: -364px -91px;
+      }
+      &:nth-child(13){
+        background-position: -455px -91px;
+      }
+      &:nth-child(14){
+        background-position: -546px -91px;
+      }
+      &:nth-child(15){
+        background-position: 0 -182px;
+      }
+      &:nth-child(16){
+        background-position: -91px -182px;
+      }
+      &:nth-child(17){
+        background-position: -182px -182px;
+      }
+      &:nth-child(18){
+        background-position: -273px -182px;
+      }
+      &:nth-child(19){
+        background-position: -364px -182px;
+      }
+      &:nth-child(20){
+        background-position: -455px -182px;
+      }
+      &:nth-child(21){
+        background-position: -546px -182px;
+      }
+      &:nth-child(22){
+        background-position: 0 -273px;
+      }
+      &:nth-child(23){
+        background-position: -91px -273px;
+      }
+      &:nth-child(24){
+        background-position: -182px -273px;
+      }
+      &:nth-child(25){
+        background-position: -273px -273px;
+      }
+      &:nth-child(26){
+        background-position: -364px -273px;
+      }
+      &:nth-child(27){
+        background-position: -455px -273px;
+      }
+      &:nth-child(28){
+        background-position: -546px -273px;
+      }
+      &:nth-child(29){
+        background-position: 0 -364px;
+      }
+      &:nth-child(30){
+        background-position: -91px  -364px;
+      }
+      &:nth-child(31){
+        background-position: -182px -364px;
+      }
+      &:nth-child(32){
+        background-position: -273px -364px;
+      }
+      &:nth-child(33){
+        background-position: -364px -364px;
+      }
+      &:nth-child(34){
+        background-position: -455px -364px;
+      }
+      &:nth-child(35){
+        background-position: -546px -364px;
+      }
+      &:nth-child(36){
+        background-position: 0 -455px;
+      }
+
+      &:nth-child(37){
+        background-position: -91px -455px;
+      }
+      &:nth-child(38){
+        background-position: -182px -455px;
+      }
+      &:nth-child(39){
+        background-position: -273px -455px;
+      }
+      &:nth-child(40){
+        background-position: -364px -455px;
+      }
+      &:nth-child(41){
+        background-position: -455px -455px;
+      }
+      &:nth-child(42){
+        background-position: -546px -455px;
+      }
+      &:nth-child(43){
+        background-position: 0 -546px;
+      }
+      &:nth-child(44){
+        background-position: -91px  -546px;
+      }
+      &:nth-child(45){
+        background-position: -182px -546px;
+      }
+      &:nth-child(46){
+        background-position: -273px -546px;
+      }
+      &:nth-child(47){
+        background-position: -364px -546px;
+      }
+      &:nth-child(48){
+        background-position: -455px -546px;
+      }
+      &:nth-child(49){
+        background-position: -546px -546px;
+      }
+
+    }
+    &-5-box{
+      width:91px;
+      height:91px;
+      background: url("../images/art_page5_2.jpg") no-repeat;
+      opacity: 0.5;
+      float:left;
+
+      &:nth-child(1){
+        background-position: 0 0;
+      }
+      &:nth-child(2){
+        background-position: -91px 0;
+      }
+      &:nth-child(3){
+        background-position: -182px 0;
+      }
+      &:nth-child(4){
+        background-position: -273px 0;
+      }
+      &:nth-child(5){
+        background-position: -364px 0;
+      }
+      &:nth-child(6){
+        background-position: -455px 0;
+      }
+      &:nth-child(7){
+        background-position: -546px 0;
+      }
+      &:nth-child(8){
+        background-position: 0 -91px;
+      }
+      &:nth-child(9){
+        background-position: -91px -91px;
+      }
+      &:nth-child(10){
+        background-position: -182px -91px;
+      }
+
+      &:nth-child(11){
+        background-position: -273px -91px;
+      }
+      &:nth-child(12){
+        background-position: -364px -91px;
+      }
+      &:nth-child(13){
+        background-position: -455px -91px;
+      }
+      &:nth-child(14){
+        background-position: -546px -91px;
+      }
+      &:nth-child(15){
+        background-position: 0 -182px;
+      }
+      &:nth-child(16){
+        background-position: -91px -182px;
+      }
+      &:nth-child(17){
+        background-position: -182px -182px;
+      }
+      &:nth-child(18){
+        background-position: -273px -182px;
+      }
+      &:nth-child(19){
+        background-position: -364px -182px;
+      }
+      &:nth-child(20){
+        background-position: -455px -182px;
+      }
+      &:nth-child(21){
+        background-position: -546px -182px;
+      }
+      &:nth-child(22){
+        background-position: 0 -273px;
+      }
+      &:nth-child(23){
+        background-position: -91px -273px;
+      }
+      &:nth-child(24){
+        background-position: -182px -273px;
+      }
+      &:nth-child(25){
+        background-position: -273px -273px;
+      }
+      &:nth-child(26){
+        background-position: -364px -273px;
+      }
+      &:nth-child(27){
+        background-position: -455px -273px;
+      }
+      &:nth-child(28){
+        background-position: -546px -273px;
+      }
+      &:nth-child(29){
+        background-position: 0 -364px;
+      }
+      &:nth-child(30){
+        background-position: -91px  -364px;
+      }
+      &:nth-child(31){
+        background-position: -182px -364px;
+      }
+      &:nth-child(32){
+        background-position: -273px -364px;
+      }
+      &:nth-child(33){
+        background-position: -364px -364px;
+      }
+      &:nth-child(34){
+        background-position: -455px -364px;
+      }
+      &:nth-child(35){
+        background-position: -546px -364px;
+      }
+      &:nth-child(36){
+        background-position: 0 -455px;
+      }
+
+      &:nth-child(37){
+        background-position: -91px -455px;
+      }
+      &:nth-child(38){
+        background-position: -182px -455px;
+      }
+      &:nth-child(39){
+        background-position: -273px -455px;
+      }
+      &:nth-child(40){
+        background-position: -364px -455px;
+      }
+      &:nth-child(41){
+        background-position: -455px -455px;
+      }
+      &:nth-child(42){
+        background-position: -546px -455px;
+      }
+      &:nth-child(43){
+        background-position: 0 -546px;
+      }
+      &:nth-child(44){
+        background-position: -91px  -546px;
+      }
+      &:nth-child(45){
+        background-position: -182px -546px;
+      }
+      &:nth-child(46){
+        background-position: -273px -546px;
+      }
+      &:nth-child(47){
+        background-position: -364px -546px;
+      }
+      &:nth-child(48){
+        background-position: -455px -546px;
+      }
+      &:nth-child(49){
+        background-position: -546px -546px;
+      }
+
+    }
+  }
+  &-arrow{
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 0 30px;
+
+    &.wrap1{
+      top: 38%;
+      left: 35px;
+    }
+    &.wrap2{
+      top: 38%;
+      left: 50%;
+
+      z-index: 2;
+    }
+    &.wrap3{
+      top: 38%;
+      right: 35px;
+    }
+
+  }
+}
+.artup {
+  width: 40px;
+  height: 22px;
+  background: url("../images/arrow_updown_icon.png") no-repeat 0 0;
+  display: block;
+  cursor: pointer;
+
+  &:hover {
+    background: #fff url("../images/arrow_updown_icon.png") no-repeat 0 0;
+  }
+}
+.artdown{
+  width:40px;
+  height: 22px;
+  background:url("../images/arrow_updown_icon.png") no-repeat 0 -31px;
+  margin-top:180px;
+  cursor: pointer;
+
+  &:hover{
+    background:#fff url("../images/arrow_updown_icon.png") no-repeat 0 -31px;
+  }
+}
+.ani{
+  transition: transform .5s ease-out;
+}
+.down{
+  transform: translateY(-100%);
+}
+.up{
+  transform: translateY(100%);
+}
+.middle{
+  transform: translate(0, 0);
+}
+>>>>>>> d925b6168cdb5c036d653c4a1d1c7bdf5ec36990

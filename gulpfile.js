@@ -43,15 +43,20 @@ gulp.task('sass', function(){
 
 
 
+<<<<<<< HEAD
  // concat
+=======
+ //concat
+>>>>>>> d925b6168cdb5c036d653c4a1d1c7bdf5ec36990
 
-gulp.task('MenuOpen', function() {
+gulp.task('function', function() {
   return gulp.src('js_src/*.js')
       .pipe(sourcemaps.init())
-      .pipe(concat('menu_open.js'))
+      .pipe(concat('function.js'))
       .pipe(sourcemaps.write())
       .pipe(gulp.dest('js/'));
 });
+<<<<<<< HEAD
 
 gulp.task('WhichSlide', function() {
     return gulp.src('js_src/*.js')
@@ -62,6 +67,9 @@ gulp.task('WhichSlide', function() {
 });
 
 gulp.task('jsconcat', ['MenuOpen', 'WhichSlide']);
+=======
+gulp.task('jsconcat', ['function']);
+>>>>>>> d925b6168cdb5c036d653c4a1d1c7bdf5ec36990
 
 
 gulp.task('default', ['livereload', 'include', 'sass', 'jsconcat', 'watch']);

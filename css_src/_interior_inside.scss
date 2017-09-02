@@ -25,9 +25,15 @@
       font-size:90px;
       font-weight: 500;
       position:absolute;
+<<<<<<< HEAD
       top:10px;
       transform:translate3d(-300px,0,0);
       transition:all 1s ease-in;
+=======
+      top:0;
+      left:0;
+      transform:translate3d(-300px,0,0);
+>>>>>>> d925b6168cdb5c036d653c4a1d1c7bdf5ec36990
 
 
 
@@ -62,45 +68,52 @@
   }
 
   &-middle1{
-    height:2500px;
+    height:2300px;
     position:relative;
 
     &-bg{
       position:absolute;
-      top: 800px;
+      top: 600px;
       left: 135px;
       width: 500px;
       height: 500px;
-      border:6px solid #56878f;
+      border:8px solid #56878f;
       text-indent: -9999em;
+      z-index:1;
     }
 
     &-image{
       position:absolute;
+      transition:all .5s ease-out;
 
-      &:nth-child(2){
+      &.one{
         width:1010px;
         height:601px;
         top:0;
         left:0;
+
       }
-      &:nth-child(3){
+      &.two{
         width:464px;
         height:580px;
         top: 220px;
         left: 728px;
+
       }
-      &:nth-child(4){
+      &.three{
         width:808px;
         height:601px;
-        top:1000px;
+        top:800px;
         left:350px;
+        z-index:0;
+
       }
-      &:nth-child(5){
+      &.four{
         width:564px;
         height:770px;
         top:1500px;
         left:0;
+
       }
 
     }
@@ -238,6 +251,10 @@
     font-weight: 500;
     text-align: center;
     padding-bottom:150px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> d925b6168cdb5c036d653c4a1d1c7bdf5ec36990
   }
 
   &-which{
@@ -267,6 +284,7 @@
       position:absolute;
       top:0;
       left:0;
+<<<<<<< HEAD
       &.wid-on{
         width:1600px;
         .inter-which-imagewrap2{
@@ -283,11 +301,35 @@
       top:0;
       left:800px;
 
+=======
+      z-index:10;
+      transition:all 1s ease-out;
+
+      .inter-which-image{
+        position: absolute;
+        left: 0;
+        width:1600px;
+        z-index: 0;
+      }
+    }
+
+    &-imagewrap2{
+      width:800px;
+      height:900px;
+      overflow:hidden;
+      position:absolute;
+      top:0;
+      left:800px;
+      z-index:10;
+      transition:all 1s ease-out;
+
+>>>>>>> d925b6168cdb5c036d653c4a1d1c7bdf5ec36990
       .inter-which-image{
         position: absolute;
         right: 0;
         width:1600px;
         z-index: 0;
+<<<<<<< HEAD
 
       }
     }
@@ -304,6 +346,56 @@
 
     }
   }
+=======
+
+      }
+    }
+
+    &-arrow-wrap1{
+      width:50px;
+      height:100%;
+      position:absolute;
+      right:0;
+      z-index:1;
+
+      &:hover{
+        background: #fff;
+        opacity: 0.5;
+      }
+
+    }
+
+    &-arrow-wrap2{
+      width:50px;
+      height:100%;
+      position:absolute;
+      z-index:1;
+
+      &:hover{
+        background: #fff;
+        opacity: 0.5;
+      }
+    }
+
+    .arrow-icon{
+      width: 27px;
+      height: 50px;
+      background:url("../images/arrow_icon.png") no-repeat;
+      text-indent: -9999em;
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+
+      &.right {
+        width: 27px;
+        height: 50px;
+        background: url("../images/arrow_icon.png") no-repeat -39px 0;
+        text-indent: -9999em;
+        position: absolute;
+      }
+    }
+>>>>>>> d925b6168cdb5c036d653c4a1d1c7bdf5ec36990
 
 }
 .arrow-icon{
@@ -331,6 +423,7 @@
     opacity: 0.5;
   }
 
+<<<<<<< HEAD
  }
 .arrow-wrap2{
   width:50px;
@@ -342,3 +435,8 @@
     opacity: 0.5;
   }
 }
+=======
+}
+
+
+>>>>>>> d925b6168cdb5c036d653c4a1d1c7bdf5ec36990

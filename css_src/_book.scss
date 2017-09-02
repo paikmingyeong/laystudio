@@ -1,6 +1,10 @@
 .book{
   width:100%;
+<<<<<<< HEAD
   height:6500px;
+=======
+  height:6100px;
+>>>>>>> d925b6168cdb5c036d653c4a1d1c7bdf5ec36990
   position:relative;
   background:#043731;
 
@@ -70,16 +74,61 @@
       font-size: 15px;
       text-align: center;
     }
+<<<<<<< HEAD
 
     &-paragraph{
       color:#777;
       text-align:center;
       font-size:15px;
     }
+=======
+>>>>>>> d925b6168cdb5c036d653c4a1d1c7bdf5ec36990
 
+    &-paragraph{
+      width:400px;
+      color:#777;
+      text-align:center;
+      font-size:15px;
+      margin:0 auto;
+    }
 
   }
+}
+.top{
+  width:41px;
+  height:22px;
+  background: url(../images/book_top.png) no-repeat;
+  position:fixed;
+  right:35px;
+  top:91%;
+  box-sizing: border-box;
+  text-indent: -9999em;
+}
 
+// 배경
+
+<<<<<<< HEAD
 
 
 }
+=======
+.changeColor1 {
+  color: #f78f90;
+}
+.changeColor2 {
+  background: #F24440;
+  color: #FFDBE4;
+}
+.changeColor3 {
+  background: #f1f1f1;
+  color: #000;
+}
+.changeColor4 {
+  background: #f49090;
+  color: #8ea65c;
+}
+.changeColor5 {
+  background: #046F84;
+  color: #FFF;
+}
+>>>>>>> d925b6168cdb5c036d653c4a1d1c7bdf5ec36990
