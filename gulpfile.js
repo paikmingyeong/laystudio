@@ -43,7 +43,7 @@ gulp.task('sass', function(){
 
 
 
- concat
+ // concat
 
 gulp.task('MenuOpen', function() {
   return gulp.src('js_src/*.js')
@@ -52,7 +52,16 @@ gulp.task('MenuOpen', function() {
       .pipe(sourcemaps.write())
       .pipe(gulp.dest('js/'));
 });
-gulp.task('jsconcat', ['MenuOpen']);
+
+gulp.task('WhichSlide', function() {
+    return gulp.src('js_src/*.js')
+        .pipe(sourcemaps.init())
+        .pipe(concat('inter_which_slide.js'))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('js/'));
+});
+
+gulp.task('jsconcat', ['MenuOpen', 'WhichSlide']);
 
 
 gulp.task('default', ['livereload', 'include', 'sass', 'jsconcat', 'watch']);

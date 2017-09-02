@@ -3,7 +3,7 @@
 .interior{
   width:100%;
   min-width:1200px;
-  height:3100px;
+  height:1850px;
   position:relative;
 
   &-wrap{
@@ -21,15 +21,15 @@
       width:100%;
       height:280px;
       overflow:hidden;
+      cursor:pointer;
 
       &>span{
         display: block;
         position: absolute;
         top: 125px;
-        left: 1307px;
-        width: 620px;
+        right: 0;
         background: #fff;
-        font-size: 60px;
+        font-size: 45px;
         font-weight: 500;
         padding: 0 50px;
       }
